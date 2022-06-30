@@ -4,15 +4,18 @@
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
+
 header {
   display: flex;
   background-color: #fff;
   width: 100%;
   height: 90px;
+
   /* position: fixed; */
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   display: flex;
   color: #5969fa;
@@ -20,12 +23,15 @@ header {
   text-align: center;
   margin-left: 24px;
 }
+
 header > .logo {
   font-size: 18px;
 }
+
 .union {
   margin-right: 24px;
 }
+
 .head-line {
   background-image: url("/images/header-shapes.svg");
   background-repeat: no-repeat;
@@ -37,26 +43,30 @@ header > .logo {
   flex-direction: column;
   top: 90px;
 }
+
 .introduction {
   margin-top: 90px;
   margin-left: 24px;
   margin-right: 24px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   font-weight: bold;
   width: 327px;
   height: 150px;
   font-size: 52px;
   line-height: 52px;
 }
+
 .intro {
   width: 60%;
   padding-left: 15px;
   text-decoration: none;
 }
+
 .link {
   text-decoration: none;
   color: #7f8cff;
 }
+
 .first-text1 {
   font-weight: bold;
   font-size: 40px;
@@ -65,9 +75,10 @@ header > .logo {
   color: #172b4d;
   padding-top: 26px;
 }
+
 .first-text2 {
   margin-left: 24px;
-  font-family: Poppins;
+  font-family: Poppins, sans-serif;
   margin-right: 24px;
   padding-top: 10px;
   font-weight: normal;
@@ -80,6 +91,7 @@ header > .logo {
   width: 90%;
   color: #344563;
 }
+
 .connect {
   font-weight: 500;
   font-size: 16px;
@@ -89,6 +101,7 @@ header > .logo {
   margin-left: 12px;
   margin-top: 12px;
 }
+
 .icons {
   margin-top: 15px;
   padding-left: 10px;
@@ -98,5 +111,4 @@ header > .logo {
   align-content: space-around;
   gap: 15px;
   margin-left: 17px;
-  margin-top: 12px;
 }
