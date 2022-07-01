@@ -368,14 +368,14 @@ h3 {
 
 .button {
   order: 99;
-  width: 162px;
+  width: 128px;
+  height: 50px;
   border-radius: 8px;
   background-color: #fff;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  height: 48px;
   margin-top: 10px;
   border: 1px solid #6070ff;
   font-style: normal;
