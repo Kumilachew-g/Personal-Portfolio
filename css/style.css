@@ -485,3 +485,128 @@ h3 {
   border-radius: 8px;
   margin-bottom: 0;
 }
+
+footer {
+  background-image: url(/images/Contact-me.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 500px;
+  height: 779px;
+  margin-top: 113.85px;
+  margin-right: 0;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/images/contact-form-shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 70% 100%;
+  position: absolute;
+  width: 265px;
+  height: 713.17px;
+  margin-left: 153px;
+  margin-top: 10px;
+  margin-bottom: 48.83px;
+}
+
+.contact-me {
+  width: 375px;
+  height: 56px;
+  margin-top: 103px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  margin-left: 25px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #fff;
+}
+
+.para-text {
+  width: 327px;
+  height: 102px;
+  margin-left: 24px;
+  margin-bottom: 75px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebedff;
+}
+
+.btn {
+  background-color: #fff;
+  width: 140px;
+  height: 48px;
+  margin-top: 20px;
+  color: #6070ff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+input {
+  width: 327px;
+  height: 48px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  margin-right: 24px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  padding-left: 8px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+textarea {
+  width: 327px;
+  height: 162px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding-left: 8px;
+  padding-top: 12;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+textarea:valid {
+  border: 2px solid green;
+}
+
+.ending {
+  margin: 25px 25%;
+}
