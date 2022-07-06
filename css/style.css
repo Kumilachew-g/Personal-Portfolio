@@ -486,14 +486,15 @@ h3 {
   margin-bottom: 0;
 }
 
+/* Conatct Form */
+
 footer {
   background-image: url(/images/Contact-me.svg);
   background-repeat: no-repeat;
+  box-sizing: border-box;
   background-size: 100%;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  width: 500px;
   height: 779px;
   margin-top: 113.85px;
   margin-right: 0;
@@ -506,7 +507,7 @@ footer {
   background-repeat: no-repeat;
   background-position: 70% 100%;
   position: absolute;
-  width: 265px;
+  width: 222px;
   height: 713.17px;
   margin-left: 153px;
   margin-top: 10px;
@@ -514,7 +515,6 @@ footer {
 }
 
 .contact-me {
-  width: 375px;
   height: 56px;
   margin-top: 103px;
   font-weight: 700;
@@ -592,7 +592,7 @@ input:valid {
 }
 
 textarea {
-  width: 327px;
+  /* width: 327px; */
   height: 162px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
@@ -608,5 +608,5 @@ textarea:valid {
 }
 
 .ending {
-  margin: 25px 25%;
+  margin: 25px 28%;
 }
