@@ -479,7 +479,7 @@ form > button:hover {
   }
 }
 
-/* desktops */
+/* Desktop Styling */
 @media screen and (min-width: 1200px) {
   nav {
     padding: 15px 150px;
