@@ -1,17 +1,16 @@
-/* variables */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
 
 :root {
-  --mainC: #6070ff;
-  --secC: #344563;
-  --sec2C: #7f8cff;
-  --mainF: "Poppins", cursive;
+  --rootw: #6070ff;
+  --subk: #344563;
+  --sub2k: #7f8cff;
+  --rootb: "Poppins", cursive;
 }
 
 /* mobile styles */
 * {
   margin: 0;
-  font-family: var(--mainF);
+  font-family: var(--rootb);
 }
 
 body {
@@ -40,7 +39,7 @@ nav {
 }
 
 .logo {
-  color: var(--mainC);
+  color: var(--rootw);
   font-weight: 700;
   font-size: 18px;
   padding: 10px;
@@ -51,14 +50,14 @@ nav {
 }
 
 .indicator:hover {
-  color: var(--mainC);
+  color: var(--rootw);
 }
 
 #desk-list {
   display: none;
 }
 
-#Union-menu {
+#union-menu {
   display: unset;
   padding: 18px;
 }
@@ -66,7 +65,7 @@ nav {
 main {
   border-bottom-left-radius: 100px;
   margin-bottom: 100px;
-  padding: 100px 40px 80px 40px;
+  padding: 100px 40px 80px;
   background: white url("/images/Header.svg") no-repeat;
   background-size: contain;
   margin-top: 75px;
@@ -84,14 +83,14 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--secC);
+  color: var(--subk);
 }
 
 a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: var(--sec2C);
+  color: var(--sub2k);
 }
 
 .socials {
@@ -119,7 +118,7 @@ a {
   border: 2px solid #dfe1e6;
   border-radius: 16px;
   box-shadow: 0 0 0.5px 0.25px inset #c8c6c6;
-  padding: 16px 16px 30px 16px;
+  padding: 16px 16px 30px;
   margin-bottom: 90px;
   transition: all ease-in-out 0.2s;
 }
@@ -199,8 +198,6 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   padding: 16px 10px;
 }
@@ -210,7 +207,7 @@ a {
   border-top-right-radius: 100px;
   display: flex;
   flex-direction: column;
-  padding: 100px 40px 80px 40px;
+  padding: 100px 40px 80px;
 }
 
 .btn {
@@ -218,8 +215,6 @@ a {
   border-radius: 16px;
   font-size: 17px;
   padding: 15px 10px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   letter-spacing: 0.03em;
@@ -295,7 +290,7 @@ a {
 }
 
 #contact-me > div > p {
-  margin: 12px 24px 0 24px;
+  margin: 12px 24px 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -351,7 +346,7 @@ form > button:hover {
 .btn-act:hover {
   color: white;
   background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
 }
 
 .btn-act:active {
@@ -366,7 +361,7 @@ form > button:hover {
 .card:hover .btn-act {
   color: white;
   background: #6070ff;
-  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
 }
 
 .card:active .btn-act {
@@ -381,7 +376,7 @@ form > button:hover {
     min-width: 200px;
   }
 
-  #Union-menu {
+  #union-menu {
     display: none;
   }
 
@@ -391,7 +386,7 @@ form > button:hover {
   }
 
   main {
-    padding: 200px 100px 150px 100px;
+    padding: 200px 100px 150px;
   }
 
   p {
@@ -442,7 +437,7 @@ form > button:hover {
   }
 
   #skiill-section > li {
-    margin: 0 0 20px 0;
+    margin: 0 0 20px;
   }
 
   #about-me-2 {
@@ -487,7 +482,7 @@ form > button:hover {
   }
 
   main {
-    padding: 240px 260px 210px 260px;
+    padding: 240px 260px 210px;
   }
 
   h1 {
