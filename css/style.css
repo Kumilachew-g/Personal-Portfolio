@@ -44,7 +44,7 @@ nav {
   font-weight: 700;
   font-size: 18px;
   padding: 10px;
-  animation: rotateZ 5s;
+  animation: rotatez 5s;
 
   /* animation: grow 1.5s linear infinite; */
 }
