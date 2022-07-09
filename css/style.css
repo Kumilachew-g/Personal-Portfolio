@@ -44,6 +44,16 @@ nav {
   font-weight: 700;
   font-size: 18px;
   padding: 10px;
+  animation: rotateZ 5s;
+  /* animation: grow 1.5s linear infinite; */
+}
+
+/* Logo animation */
+
+@keyframes rotateZ {
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .indicator {
@@ -126,6 +136,13 @@ a {
 
 .card > div > img {
   width: 100%;
+}
+
+/* image animation */
+
+.shot-img:hover {
+  transform: scale(1.2);
+  z-index: 2;
 }
 
 .details {
