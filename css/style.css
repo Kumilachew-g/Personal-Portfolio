@@ -52,8 +52,12 @@ nav {
 /* Logo animation */
 
 @keyframes rotatez {
-  to {
-    transform: rotateZ(360deg);
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(360deg);
   }
 }
 
