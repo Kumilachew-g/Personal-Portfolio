@@ -49,7 +49,8 @@ nav {
   /* animation: grow 1.5s linear infinite; */
 }
 
-/* Logo animation rotation */
+/* Logo animation */
+
 @keyframes rotatez {
   0% {
     transform: rotate(0deg);
