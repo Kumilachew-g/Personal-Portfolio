@@ -37,6 +37,7 @@ nav {
   position: fixed;
   top: 0;
   width: calc(100% - 60px);
+  z-index: 3;
 }
 
 .logo {
@@ -146,7 +147,7 @@ a {
 /* image animation */
 
 .shot-img:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
   z-index: 2;
 }
 
@@ -332,6 +333,7 @@ a {
   height: 48px;
   border-radius: 8px;
   padding-left: 10px;
+  border: 1px solid gray;
 }
 
 #message {
@@ -339,6 +341,7 @@ a {
   border-radius: 8px;
   padding-left: 10px;
   color: gray;
+  border: 1px solid gray;
 }
 
 form > button {
@@ -352,6 +355,7 @@ form > button {
   letter-spacing: 0.03em;
   border-radius: 8px;
   transition: all ease-in-out 0.2s;
+  border: 1px solid gray;
 }
 
 form > button:hover {
@@ -370,6 +374,7 @@ form > button:hover {
   color: white;
   background: #6070ff;
   box-shadow: 0 8px 16px rgb(64 83 252 / 24%);
+  border: 1px solid #cfd8dc;
 }
 
 .btn-act:active {
