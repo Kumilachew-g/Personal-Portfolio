@@ -6,36 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portoflio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
     <div>
       <!--The nav bar-->
-      <header>
-        <nav class="navbar">
-          <a href="#" class="nav-branding" id="logo">My Logo</a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="" class="lav-link text">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="lav-link text">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="lav-link text">Contact</a>
-            </li>
+      <nav>
+        <h3 class="logo indicator">My Logo</h3>
+        <div>
+          <ul id="desk-list">
+            <li><a class="active indicator" href="#demo"> Portoflio</a></li>
+            <li><a class="indicator" href="#work-section"> About</a></li>
+            <li><a class="indicator" href="#contact-me"> Contact</a></li>
           </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </header>
-
+          <img
+            class="indicator"
+            id="union-menu"
+            src="./images/union.svg"
+            alt="Union"
+          />
+        </div>
+      </nav>
+      <div id="nav-menu" class="hidden">
+        <div><span id="nav-button-close"> &#x2715; </span></div>
+        <ul>
+          <li><a href="#demo"> Portoflio</a></li>
+          <li><a href="#work-section"> About</a></li>
+          <li><a href="#contact-me"> Contact</a></li>
+        </ul>
+      </div>
 
       <!--The main section-->
       <main>
-        <section>
+        <section id="demo">
           <h1>I'm Kumilachew Glad to see you!</h1>
           <p>
             I’m a software developer! I can help you build a product , feature
