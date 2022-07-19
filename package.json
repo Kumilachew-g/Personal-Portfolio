@@ -18,15 +18,13 @@
   },
   "homepage": "https://github.com/Kumilachew-g/Personal-Portfolio#readme",
   "devDependencies": {
-    "hint": "^2.0.0",
+    "hint": "^7.1.0",
     "postcss-lit": "^0.4.3",
-    "stylelint": "^14.9.1",
+    "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^26.0.0",
+    "stylelint-config-standard": "^21.0.0",
     "stylelint-config-standard-scss": "^4.0.0",
-    "stylelint-csstree-validator": "^2.0.0"
-  },
-  "dependencies": {
-    "stylelint-scss": "^4.2.0"
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
   }
 }
