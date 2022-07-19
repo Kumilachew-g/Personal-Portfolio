@@ -1,17 +1,20 @@
-@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap';
 
 :root {
   --rootw: #6070ff;
   --subk: #344563;
   --sub2k: #7f8cff;
-  --rootb: "Poppins", cursive;
+  --rootb: 'Poppins', cursive;
 }
 
 /* mobile styles */
 * {
   margin: 0;
-  box-sizing: border-box;
   font-family: var(--rootb);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -26,119 +29,20 @@ ul {
   font-size: 30px;
 }
 
-/* Mobile Menu  */
-
-.nav-bar ul {
-  display: none;
-}
-
 li {
   padding: 10px;
-  list-style: none;
 }
 
-a {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--sub2k);
-}
-
-.navbar {
-  min-height: 90px;
+nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 25px;
-  width: 100%;
-  z-index: 3;
-  background-color: #ffffffb0;
+  padding: 15px 30px;
+  background: white;
   position: fixed;
   top: 0;
+  width: calc(100% - 60px);
+  z-index: 3;
 }
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s ease-in-out;
-  background-color: #4a5cff;
-}
-
-.nav-branding {
-  font-size: 1rem;
-  margin-left: 10px;
-}
-
-.nav-link {
-  transition: 0.7s ease;
-}
-
-.lav-link:hover {
-  color: dodgerblue;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    background-color: #fff;
-    transform: translateY(8px) rotate(48deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    background-color: #fff;
-    transform: translateY(-8px) rotate(-48deg);
-  }
-
-  .nav-bar {
-    height: 70px;
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -150%;
-    top: -20px;
-    gap: 0;
-    padding-top: 80px;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-    width: 100%;
-    transition: 0.3s;
-    background: #6070ffe0;
-  }
-
-  .nav-item {
-    margin: 0 0;
-  }
-
-  .nav-item a {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 44px;
-    color: #fff;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-}
-
-/* mobile menu ends here */
 
 .logo {
   color: var(--rootw);
@@ -146,6 +50,8 @@ a {
   font-size: 18px;
   padding: 10px;
   animation: rotatez 5s;
+
+  /* animation: grow 1.5s linear infinite; */
 }
 
 /* Logo animation */
@@ -165,11 +71,39 @@ a {
 }
 
 .indicator:hover {
-  color: var(--rootw);
+  color: var(--rootw) !important;
+}
+
+.active {
+  color: var(--rootw) !important;
+  border-bottom: 2px solid var(--rootw);
 }
 
 #desk-list {
   display: none;
+}
+
+a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--sub2k);
+}
+
+.details > a {
+  border: 1px solid #396df2;
+  border-radius: 14px;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  width: fit-content;
+  padding: 16px 10px;
+}
+
+#desk-list > li > a {
+  text-decoration: none;
+  color: black;
 }
 
 #union-menu {
@@ -181,7 +115,7 @@ main {
   border-bottom-left-radius: 100px;
   margin-bottom: 100px;
   padding: 100px 40px 80px;
-  background: white url("/images/Header.svg") no-repeat;
+  background: white url('/images/Header.svg') no-repeat;
   background-size: contain;
   margin-top: 75px;
 }
@@ -200,13 +134,6 @@ p {
   line-height: 24px;
   color: var(--subk);
 }
-
-/* a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: var(--sub2k);
-} */
 
 .socials {
   width: 180px;
@@ -313,17 +240,6 @@ p {
   list-style-type: none;
 }
 
-.details > a {
-  border: 1px solid #396df2;
-  border-radius: 14px;
-  font-size: 17px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #396df2;
-  width: fit-content;
-  padding: 16px 10px;
-}
-
 #personal {
   background: white;
   border-top-right-radius: 100px;
@@ -394,7 +310,7 @@ p {
 }
 
 #contact-me {
-  background: #6070ff url("/images/contactbg2.png") no-repeat;
+  background: #6070ff url('/images/contactbg2.png') no-repeat;
   background-size: contain;
   border-top-left-radius: 80px;
   display: flex;
@@ -605,11 +521,6 @@ form > button:hover {
 @media screen and (min-width: 1200px) {
   nav {
     padding: 15px 150px;
-    width: calc(100% - 300px);
-  }
-
-  .nav-branding {
-    padding: 15px 70px;
     width: calc(100% - 300px);
   }
 
