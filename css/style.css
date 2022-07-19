@@ -10,6 +10,7 @@
 /* mobile styles */
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: var(--rootb);
 }
 
@@ -25,20 +26,9 @@ ul {
   font-size: 30px;
 }
 
-li {
-  padding: 10px;
-}
+/* Mobile Menu  */
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 30px;
-  background: white;
-  position: fixed;
-  top: 0;
-  width: calc(100% - 60px);
-  z-index: 3;
-}
+/* mobile menu ends here */
 
 .logo {
   color: var(--rootw);
@@ -46,8 +36,6 @@ nav {
   font-size: 18px;
   padding: 10px;
   animation: rotatez 5s;
-
-  /* animation: grow 1.5s linear infinite; */
 }
 
 /* Logo animation */
@@ -103,12 +91,12 @@ p {
   color: var(--subk);
 }
 
-a {
+/* a {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: var(--sub2k);
-}
+} */
 
 .socials {
   width: 180px;
@@ -507,6 +495,11 @@ form > button:hover {
 @media screen and (min-width: 1200px) {
   nav {
     padding: 15px 150px;
+    width: calc(100% - 300px);
+  }
+
+  .nav-branding {
+    padding: 15px 70px;
     width: calc(100% - 300px);
   }
 
