@@ -1,0 +1,36 @@
+#nav-menu {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+}
+
+#nav-menu > ul {
+  flex-direction: column;
+  margin: 50px 28px;
+}
+
+#nav-menu > ul > li > a {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+#nav-menu > div {
+  display: flex;
+  justify-content: end;
+  margin: 30px 30px;
+  font-size: 25px;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}

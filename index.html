@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portoflio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
   </head>
   <body>
     <div>
@@ -14,9 +15,9 @@
         <h3 class="logo indicator">My Logo</h3>
         <div>
           <ul id="desk-list">
-            <li class="indicator">Portoflio</li>
-            <li class="indicator">About</li>
-            <li class="indicator">Contact</li>
+            <li><a class="active indicator" href="#demo"> Portoflio</a></li>
+            <li><a class="indicator" href="#work-section"> About</a></li>
+            <li><a class="indicator" href="#contact-me"> Contact</a></li>
           </ul>
           <img
             class="indicator"
@@ -26,9 +27,18 @@
           />
         </div>
       </nav>
+      <div id="nav-menu" class="hidden">
+        <div><span id="nav-button-close"> &#x2715; </span></div>
+        <ul>
+          <li><a href="#demo"> Portoflio</a></li>
+          <li><a href="#work-section"> About</a></li>
+          <li><a href="#contact-me"> Contact</a></li>
+        </ul>
+      </div>
+
       <!--The main section-->
       <main>
-        <section>
+        <section id="demo">
           <h1>I'm Kumilachew Glad to see you!</h1>
           <p>
             I’m a software developer! I can help you build a product , feature
@@ -284,5 +294,6 @@
         </form>
       </section>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
