@@ -15,22 +15,6 @@
   margin: 50px 28px;
 }
 
-#nav-menu > ul > li > a {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff !important;
-  text-decoration: none;
-}
+/* Add here */
 
-#nav-menu > div {
-  display: flex;
-  justify-content: end;
-  margin: 30px 30px;
-  font-size: 25px;
-  color: white;
-}
-
-.hidden {
-  display: none;
-}
+/* Add here */
