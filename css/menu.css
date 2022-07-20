@@ -15,12 +15,12 @@
   margin: 50px 28px;
 }
 
-/* Add here */
+/* Popup style */
 #popup-demo > a {
   flex-grow: 1;
   padding: 10px;
   border-radius: 10px;
-  border: 1.5px solid #1D34FF;
+  border: 1.5px solid #1d34ff;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -73,14 +73,14 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 #pop-up-win > div > ul {
   list-style-type: unset;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
   justify-content: flex-start;
 }
 #pop-up-win > div > ul > li {
@@ -110,7 +110,7 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   padding: 10px 0 20px 0;
   /* border-bottom: 1px solid #EBECF0; */
 }
@@ -118,7 +118,7 @@
   padding: 7px 12px 0;
   margin: 5px 5px 5px 0;
   height: 24px;
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 8px;
   text-align: center;
   float: left;
@@ -174,4 +174,4 @@
 .hidden {
   display: none;
 }
-/* Add here */
+/* popup style end */
