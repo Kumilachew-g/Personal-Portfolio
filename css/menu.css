@@ -26,6 +26,7 @@
   justify-content: center;
   gap: 5px;
 }
+
 #nav-menu > ul > li > a {
   font-weight: 600;
   font-size: 32px;
@@ -33,6 +34,7 @@
   color: #fff !important;
   text-decoration: none;
 }
+
 #pop-up-win {
   position: fixed;
   height: 100vh;
@@ -42,6 +44,7 @@
   z-index: 5;
   padding: 30px 20px;
 }
+
 #pop-up-win > div {
   background: white;
   height: 90%;
@@ -53,28 +56,34 @@
   gap: 5px;
   overflow: hidden;
 }
+
 #popup-card {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
 }
+
 #popup-card > img {
   width: 100%;
 }
+
 #popup-head {
   display: flex;
   justify-content: space-between;
 }
+
 #popup-head > span {
   font-size: 24px;
   margin: 3px;
 }
+
 #popup-head > h2 {
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;
   color: #172b4d;
 }
+
 #pop-up-win > div > ul {
   list-style-type: unset;
   font-weight: 600;
@@ -83,9 +92,11 @@
   color: #7a869a;
   justify-content: flex-start;
 }
+
 #pop-up-win > div > ul > li {
   margin-left: 30px;
 }
+
 #pop-up-win > div > ul :nth-child(1) {
   font-weight: 600;
   font-size: 13px;
@@ -94,6 +105,7 @@
   margin-left: -50px;
   list-style-type: none;
 }
+
 /* #popup-explain {
   overflow: scroll;
 } */
@@ -105,6 +117,7 @@
   padding-right: 23px;
   margin: 0;
 }
+
 #popup-explain > div > menu {
   font-weight: 500;
   font-size: 12px;
@@ -112,8 +125,10 @@
   letter-spacing: 0.03em;
   color: #6070ff;
   padding: 10px 0 20px 0;
+
   /* border-bottom: 1px solid #EBECF0; */
 }
+
 #popup-explain > div > menu > li {
   padding: 7px 12px 0;
   margin: 5px 5px 5px 0;
@@ -124,46 +139,57 @@
   float: left;
   list-style-type: none;
 }
+
 #popup-explain > div {
   display: flex;
   flex-direction: column;
 }
+
 #popup-demo {
   margin: 20px 0;
   display: flex;
   gap: 10px;
 }
+
 #popup-demo svg {
   margin-top: 3px;
 }
+
 #popup-demo > a > span {
   padding-bottom: 5px;
 }
+
 @media screen and (min-width: 650px) {
   #pop-up-win {
     padding: 20px 80px;
   }
+
   #pop-up-win > div {
     border-radius: 28px;
     width: calc(100% - 160px);
   }
+
   #popup-explain {
     display: flex;
     margin-top: 30px;
   }
+
   #popup-card {
     max-width: unset;
     height: 50vh;
     overflow: hidden;
   }
+
   #popup-card > img {
     -o-object-fit: cover;
     object-fit: cover;
   }
+
   #popup-explain > p {
     width: 70%;
   }
 }
+
 #nav-menu > div {
   display: flex;
   justify-content: end;
@@ -171,7 +197,9 @@
   font-size: 25px;
   color: white;
 }
+
 .hidden {
   display: none;
 }
+
 /* popup style end */
