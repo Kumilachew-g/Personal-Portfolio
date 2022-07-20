@@ -31,3 +31,85 @@ document.addEventListener('scroll', () => {
     activeMenuNav[2].classList.add('active');
   }
 });
+
+// Pop up
+const projectArray = [
+  {
+    id: 0,
+    imgURL: './images/Snapshoot-Portfolio-4.png',
+    heading: 'Multi-Post Stories',
+    firstList: ['CANOPY', 'Back End', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    secList: ['HTML', 'CSS', 'JavaScript'],
+  },
+  {
+    id: 1,
+    imgURL: './images/Snapshoot-Portfolio.png',
+    heading: 'Facebook 360',
+    firstList: ['FACEBOOK', 'FULL Stack Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+  },
+  {
+    id: 2,
+    imgURL: './images/Snapshoot-Portfolio-1.png',
+    heading: 'Uber Navigations',
+    firstList: ['UBER', 'Lead Developer', '2018'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+  },
+  {
+    id: 3,
+    imgURL: './images/Snapshoot-Portfolio-2.png',
+    heading: 'Multi-Post Stories',
+    firstList: ['CANOPY', 'Back End', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+  },
+  {
+    id: 4,
+    imgURL: './images/Snapshoot-Portfolio-3.png',
+    heading: 'Multi-Post Stories',
+    firstList: ['FACEBOOK', 'FULL Stack Dev', '2015'],
+    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+  },
+];
+
+const closePopup = document.querySelector('#popup-head > span');
+const PopUp = document.querySelector('#pop-up-win');
+const cards = document.querySelectorAll('.card a');
+
+closePopup.addEventListener('click', () => {
+  PopUp.classList.toggle('hidden');
+});
+
+const makePopup = ({
+  imgURL, heading, firstList, text, secList,
+}) => {
+  const pHead = document.querySelector('#popup-head > h2');
+  const P1List = document.querySelectorAll('#pop-up-win ul > li');
+  const PImg = document.querySelector('#popup-card > img');
+  const PText = document.querySelector('#popup-explain > p');
+  const P2List = document.querySelector('#popup-explain menu');
+
+  pHead.innerHTML = heading;
+  PText.innerHTML = text;
+  PImg.src = imgURL;
+  P1List.forEach((ele, i) => {
+    ele.innerHTML = firstList[i];
+  });
+  P2List.innerHTML = '';
+  secList.forEach((ele) => {
+    const listItem = document.createElement('li');
+    listItem.innerHTML = ele;
+    P2List.appendChild(listItem);
+  });
+  PopUp.classList.toggle('hidden');
+};
+
+cards.forEach((ele, i) => {
+  ele.addEventListener('click', () => {
+    makePopup(projectArray[i]);
+  });
+});
