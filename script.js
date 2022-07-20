@@ -11,11 +11,9 @@ menu.addEventListener('click', () => {
   navs.classList.toggle('hidden');
 });
 
-links.forEach((ele) =>
-  ele.addEventListener('click', () => {
-    navs.classList.toggle('hidden');
-  })
-);
+links.forEach((ele) => ele.addEventListener('click', () => {
+  navs.classList.toggle('hidden');
+}));
 
 const bio = document.querySelector('#demo');
 const about = document.querySelector('#work-section');
@@ -86,7 +84,9 @@ closePopup.addEventListener('click', () => {
   PopUp.classList.toggle('hidden');
 });
 
-const makePopup = ({ imgURL, heading, firstList, text, secList }) => {
+const makePopup = ({
+  imgURL, heading, firstList, text, secList,
+}) => {
   const pHead = document.querySelector('#popup-head > h2');
   const P1List = document.querySelectorAll('#pop-up-win ul > li');
   const PImg = document.querySelector('#popup-card > img');
