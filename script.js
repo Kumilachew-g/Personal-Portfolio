@@ -47,7 +47,7 @@ const projectArray = [
     imgURL: './images/Snapshoot-Portfolio.png',
     heading: 'Facebook 360',
     firstList: ['FACEBOOK', 'FULL Stack Dev', '2015'],
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
   },
   {
