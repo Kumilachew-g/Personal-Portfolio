@@ -11,9 +11,11 @@ menu.addEventListener('click', () => {
   navs.classList.toggle('hidden');
 });
 
-links.forEach((ele) => ele.addEventListener('click', () => {
-  navs.classList.toggle('hidden');
-}));
+links.forEach((ele) =>
+  ele.addEventListener('click', () => {
+    navs.classList.toggle('hidden');
+  })
+);
 
 const bio = document.querySelector('#demo');
 const about = document.querySelector('#work-section');
@@ -39,7 +41,7 @@ const projectArray = [
     imgURL: './images/Snapshoot-Portfolio-4.png',
     heading: 'Multi-Post Stories',
     firstList: ['CANOPY', 'Back End', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     secList: ['HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -47,7 +49,7 @@ const projectArray = [
     imgURL: './images/Snapshoot-Portfolio.png',
     heading: 'Facebook 360',
     firstList: ['FACEBOOK', 'FULL Stack Dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
   },
   {
@@ -55,7 +57,7 @@ const projectArray = [
     imgURL: './images/Snapshoot-Portfolio-1.png',
     heading: 'Uber Navigations',
     firstList: ['UBER', 'Lead Developer', '2018'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
   },
   {
@@ -63,7 +65,7 @@ const projectArray = [
     imgURL: './images/Snapshoot-Portfolio-2.png',
     heading: 'Multi-Post Stories',
     firstList: ['CANOPY', 'Back End', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
   },
   {
@@ -71,7 +73,7 @@ const projectArray = [
     imgURL: './images/Snapshoot-Portfolio-3.png',
     heading: 'Multi-Post Stories',
     firstList: ['FACEBOOK', 'FULL Stack Dev', '2015'],
-    text: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
   },
 ];
@@ -84,9 +86,7 @@ closePopup.addEventListener('click', () => {
   PopUp.classList.toggle('hidden');
 });
 
-const makePopup = ({
-  imgURL, heading, firstList, text, secList,
-}) => {
+const makePopup = ({ imgURL, heading, firstList, text, secList }) => {
   const pHead = document.querySelector('#popup-head > h2');
   const P1List = document.querySelectorAll('#pop-up-win ul > li');
   const PImg = document.querySelector('#popup-card > img');
