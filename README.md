@@ -17,6 +17,8 @@ To access a local copy up and runn follow these simple steps.
 
 - web browser
 
+## Live Demo
+
 ### Usage
 
 - clone this repository into your local machine
