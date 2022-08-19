@@ -19,6 +19,8 @@ To access a local copy up and runn follow these simple steps.
 
 ## Live Demo
 
+ https://kumilachew-g.github.io/Personal-Portfolio/
+
 ### Usage
 
 - clone this repository into your local machine
