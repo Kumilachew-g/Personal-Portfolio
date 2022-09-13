@@ -19,7 +19,7 @@ To access a local copy up and runn follow these simple steps.
 
 ## Live Demo
 
- https://kumilachew-g.github.io/Personal-Portfolio/
+ [Live Demo](https://kumilachew-g.github.io/Personal-Portfolio/)
 
 ### Usage
 
