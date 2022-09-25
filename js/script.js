@@ -11,9 +11,11 @@ menu.addEventListener('click', () => {
   navs.classList.toggle('hidden');
 });
 
-links.forEach((ele) => ele.addEventListener('click', () => {
-  navs.classList.toggle('hidden');
-}));
+links.forEach((ele) =>
+  ele.addEventListener('click', () => {
+    navs.classList.toggle('hidden');
+  })
+);
 
 const bio = document.querySelector('#demo');
 const about = document.querySelector('#work-section');
@@ -36,43 +38,44 @@ document.addEventListener('scroll', () => {
 const projectArray = [
   {
     id: 0,
-    imgURL: './images/Snapshoot-Portfolio-4.png',
-    heading: 'Multi-Post Stories',
-    firstList: ['CANOPY', 'Back End', '2015'],
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    // imgURL: './images/Snapshoot-Portfolio-4.png',
+    imgURL: './images/popup/p3.png',
+    heading: 'Haddis Technology PLC',
+    firstList: ['Microverse', 'Front End', '2022'],
+    text: 'This capstone project website is developed using HTML5, CSS3, and vanilla JavaScript for technology campanies to present the service provided by the campany and to share the latest work ifrormations.',
     secList: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 1,
-    imgURL: './images/Snapshoot-Portfolio.png',
-    heading: 'Facebook 360',
-    firstList: ['FACEBOOK', 'FULL Stack Dev', '2015'],
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+    imgURL: './images/popup/p4-min.png',
+    heading: 'Movie Series',
+    firstList: ['Microverse', 'Front End Dev', '2022'],
+    text: 'This Movies Series project is about building my own web application based on an external API. I was select an API that provides data about a topic that you like and then build the webapp around it. The webapp have 2 user interfaces.',
+    secList: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 2,
-    imgURL: './images/Snapshoot-Portfolio-1.png',
-    heading: 'Uber Navigations',
-    firstList: ['UBER', 'Lead Developer', '2018'],
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+    imgURL: './images/popup/p5.png',
+    heading: 'LeaderBoard',
+    firstList: ['Microverse', 'kumilachew', '2022'],
+    text: 'The leaderboard website displays scores submitted by different players. It also allows users to submit your score. Once scores are submitted, users can refresh the current dashboard to get updated scores.',
+    secList: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 3,
-    imgURL: './images/Snapshoot-Portfolio-2.png',
-    heading: 'Multi-Post Stories',
-    firstList: ['CANOPY', 'Back End', '2015'],
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+    imgURL: './images/popup/p6.png',
+    heading: 'Awesome Books',
+    firstList: ['Microverse', 'Front End', '2022'],
+    text: 'This awesome book web application is developed using Vanilla JavaScript. The app has adding books and storing them in local storage and display books features to the pages.',
+    secList: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     id: 4,
-    imgURL: './images/Snapshoot-Portfolio-3.png',
-    heading: 'Multi-Post Stories',
-    firstList: ['FACEBOOK', 'FULL Stack Dev', '2015'],
-    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    secList: ['HTML', 'CSS', 'JavaScript', 'Ruby on rails'],
+    imgURL: './images/popup/p7-min.png',
+    heading: 'Book Store',
+    firstList: ['Microverse', 'Front End Dev', '2022'],
+    text: 'The bookstore is a website that allows you to display a list of books, add a book, and remove a selected book. Built with React and Redux.',
+    secList: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
   },
 ];
 
@@ -84,9 +87,7 @@ closePopup.addEventListener('click', () => {
   PopUp.classList.toggle('hidden');
 });
 
-const makePopup = ({
-  imgURL, heading, firstList, text, secList,
-}) => {
+const makePopup = ({ imgURL, heading, firstList, text, secList }) => {
   const pHead = document.querySelector('#popup-head > h2');
   const P1List = document.querySelectorAll('#pop-up-win ul > li');
   const PImg = document.querySelector('#popup-card > img');

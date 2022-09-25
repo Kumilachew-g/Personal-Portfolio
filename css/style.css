@@ -172,7 +172,7 @@ p {
 /* image animation */
 
 .shot-img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   z-index: 2;
 }
 
