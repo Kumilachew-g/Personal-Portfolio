@@ -6,7 +6,7 @@ This project is mainly about creating personal portfolio by HTML5 and CSS3.
 
 ## Built With
 
-- Major languages: HTML5,CSS3
+- Major languages: HTML5, CSS3
 - Technologies used: linters, Lighthouse, Webhint, Stylelint
 
 ## Getting Started
@@ -19,7 +19,7 @@ To access a local copy up and runn follow these simple steps.
 
 ## Live Demo
 
- [Live Demo](https://kumilachew-g.github.io/Personal-Portfolio/)
+[Live Demo](https://kumilachew-g.github.io/Personal-Portfolio/)
 
 ### Usage
 
@@ -41,7 +41,7 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Kumilachew-g/Personal-Portfolio/issues).
 
-## Show your support
+## Show Your Support
 
 Give a ⭐ if you like this project!
 
