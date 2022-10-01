@@ -56,7 +56,7 @@ nav {
 
 /* Logo animation */
 
-@keyframes rotatez {
+/* @keyframes rotatez {
   0% {
     transform: rotate(0deg);
   }
@@ -64,7 +64,7 @@ nav {
   50% {
     transform: rotate(360deg);
   }
-}
+} */
 
 .indicator {
   cursor: pointer;
@@ -379,7 +379,7 @@ form > button:hover {
   color: white;
 }
 
-/* hovers and active */
+/* hovers and active stylings */
 .btn-act {
   transition: all ease-in-out 0.2s;
   cursor: pointer;
@@ -412,7 +412,7 @@ form > button:hover {
   background: #2230d2;
 }
 
-/* tablet */
+/* tablet size */
 @media screen and (min-width: 900px) {
   #desk-list {
     display: flex;
@@ -517,7 +517,7 @@ form > button:hover {
   }
 }
 
-/* Desktop Styling */
+/* Desktop Version Styling */
 @media screen and (min-width: 1200px) {
   nav {
     padding: 15px 150px;
